@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -22,6 +23,25 @@ nav{
     justify-content: space-evenly;
 }
 
+.menu a:hover{
+    background-color: black;
+}
+.cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fondo2.png);
+    border: 15px #084d6e;
+    padding-left: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
 
 
 .slide{
@@ -95,6 +115,7 @@ nav{
     overflow: hidden;
 }
 
+
 .animation{
 
 
@@ -133,14 +154,13 @@ nav{
 }
 
 
-
 .menu{
     padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 10px;
-    
+    width: 1300;
 
 }
 
@@ -151,10 +171,6 @@ nav{
     font-size: 15px;
     color: white;
     text-decoration: none;
-    
-    
-    
-    
     
 }
 
@@ -169,14 +185,24 @@ nav{
     display:flex;
     flex-direction: column;
     text-align: center;
+    background-color: #084d6e ;
+    padding: 30px 30px ;
     border-radius: 60px;
     border: 2px black;
-    background-color: #084d6e ;
-    padding: 40px 40px ;
 
 }
 
-.enlace1 a{
+.enlace2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #084d6e ;
+    padding: 30px 30px ;
+    border-radius: 60px;
+    border: 2px black;
+
+}
+.enlace2 a{
 
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -184,6 +210,204 @@ nav{
     font-size: 30px;
 }
 
-.enlace1 img{
-    margin-left: 100px;
+.enlace3:hover{
+    background-color: black;
 }
+
+.enlace2 img{
+    margin-left: 5px;
+}
+
+
+.enlace1 a{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+.enlace1 img{
+    margin-left: 5px;
+}
+
+.opiniones{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.wpp {
+    position: fixed;
+    bottom: 0;
+    right: 0; 
+    margin-right: 17px;
+    margin-bottom: 15px;
+}
+
+.final{
+    color: white;
+    display: flex;
+    justify-content: left;
+    height: 100px;
+    background-color: black;
+    padding-top: 30px;
+}
+
+.materias{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas: 
+                        "quimica biofisica matematica"
+                        "Fisica Algebra Analisis";
+    align-items: stretch;
+    justify-content:space-evenly;
+    grid-column-gap: 10px;
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .materias{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+                            "quimica"
+                            "biofisica"
+                            "matematica"
+                            "Fisica"
+                            "Algebra"
+                            "Analisis";
+
+    }
+
+    .container span{
+        font-size: 50pt;}
+
+    .cursos{
+        font-size: 15px;
+    }
+    .quimica{
+        width: 310px;
+    }
+    .biofisica{
+        width: 310px;
+    }
+    .Algebra{
+        width: 310px;
+    }
+    .Analisis{
+        width: 310px;
+    }
+    .matematica{
+        width: 310px;
+    }
+    .Fisica{
+        width: 310px;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.quimica{
+
+    background-image: url(Química.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Comfortaa', cursive;
+    font-weight:800;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+
+
+
+}
+
+.biofisica{
+
+    background-image: url(biofisica.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+
+
+}
+
+.matematica{
+
+    background-image: url(matematica.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+
+
+}
+
+.Fisica{
+
+    background-image: url(fisica.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+
+
+}
+
+.Analisis{
+
+    background-image: url(analisis.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+
+
+}
+
+.Algebra{
+
+    background-image: url(algebra.png);
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom:100px;
+    border: 5px black solid;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+
+
+}
+
+
