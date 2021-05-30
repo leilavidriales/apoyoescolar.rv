@@ -312,6 +312,32 @@ nav{
     .Fisica{
         width: 310px;
     }
+
+    .menu1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .slide{
+
+        margin-left: 30px;
+        height: 400px;
+        width: 500px;
+    }
+    .redireccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opiniones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 img{
