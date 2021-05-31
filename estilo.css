@@ -345,6 +345,12 @@ nav{
         align-items: center;
         justify-content: space-around;
     }
+
+    .pagos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 img{
